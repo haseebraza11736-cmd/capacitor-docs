@@ -1,24 +1,10 @@
----
-title: CLI Command - cap add
-description: Capacitor CLI - cap add
-contributors:
-  - dotNetkow
-sidebar_label: add
----
+import { CapacitorConfig } from '@capacitor/cli';
 
-# Capacitor CLI - cap add
+const config: CapacitorConfig = {
+  appId: 'com.example.voicecommandcompanion',
+  appName: 'Malhi Voice',
+  webDir: 'dist',
+  bundledWebRuntime: false
+};
 
-Add a native platform project to your app.
-
-```bash
-npx cap add <platform>
-```
-
-<strong>Inputs:</strong>
-
-- `platform` (required): `android`, `ios`
-
-<strong>Options:</strong>
-
-iOS Only:
-- `--packagemanager`: `SPM`, `Cocoapods`
+export default config;
